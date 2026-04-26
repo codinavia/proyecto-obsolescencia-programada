@@ -1,90 +1,73 @@
-\documentclass[12pt,a4paper]{article} % Define el tipo de documento y formato de hoja
+\documentclass[12pt,a4paper]{article}
+ 
+\usepackage[spanish, shorthands=off]{babel}
 
-\usepackage[spanish]{babel} % Permite escribir en español correctamente
-\usepackage[utf8]{inputenc} % Permite usar acentos directamente
-\usepackage[T1]{fontenc} % Mejora la codificación de fuentes
-\usepackage{graphicx} % Permite insertar imágenes
-\usepackage{geometry} % Permite modificar márgenes
-\usepackage{setspace} % Permite ajustar el interlineado
-\usepackage{tocloft} % Permite personalizar el índice
-
-\geometry{margin=2.5cm} % Define márgenes del documento
-\onehalfspacing % Define interlineado de 1.5
-
-\title{Principales ríos y su contaminación} % Título del documento
-\author{Ma, Aracely Martínez Amaya} % Autor del documento
-\date{\today} % Fecha automática
-
-\begin{document} % Inicio del documento
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+ 
+\usepackage{csquotes}
+ 
+\usepackage[style=apa, backend=biber]{biblatex}
+\DeclareLanguageMapping{spanish}{spanish-apa}
+\addbibresource{references.bib}
+ 
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{tocloft}
+ 
+\geometry{margin=2.5cm}
+\onehalfspacing{}
+\setlength{\parskip}{1em}
+ 
+\begin{document}
 
 % ---------------- PORTADA ----------------
-\begin{titlepage} % Inicia la página de portada
-    \centering % Centra el contenido
-    \begin{flushleft} % Alinea el contenido a la izquierda
-        
-        % \includegraphics[width=0.20\textwidth]{TALLER 1/logoTecnm.jpg} % Imagen más pequeña (25% del ancho del texto)
-        
-    \end{flushleft} % Fin de alineación izquierda
-    
-    {\LARGE \textbf{Tecnológico Nacional de México Campus Culiacán}}\\[1.5cm] % Título
-    {\Large Contaminación de los principales Ríos}\\[1cm] 
-    {\large Nombre del estudiante}\\[0.5cm]
-    {\large Nombre del profesor}\\[0.5cm]
-    {\large Taller de Investigación I}\\[0.5cm] 
-    {\large \today}\\ % Fecha
-\end{titlepage} % Fin de la portada
+\begin{titlepage}
+    \centering
+    \begin{flushleft}
+        % \includegraphics[width=0.20\textwidth]{logoTecnm.jpg}
+    \end{flushleft}
+
+    {\large \textbf{Tecnológico Nacional de México Campus Culiacán}}\\[1.5cm]
+    {\large Obsolescencia Programada: Cómo Erradicarla a Través de la Honestidad\\
+    y Veracidad de la Información en Smartphones y Laptops\\
+    Mediante los Principios de la Economía Circular}\\[1cm]
+    {\large Ma. Aracely Martínez Amaya}\\[0.5cm]
+    {\large Taller de Investigación I}\\[0.5cm]
+    {\large \today}
+\end{titlepage}
 
 % ---------------- ÍNDICE ----------------
-\tableofcontents % Inserta índice automático
-\newpage % Salto de página
+\tableofcontents
+\newpage
 
-% ---------------- JUSTIFICACIÓN ----------------
-\section{Justificación} % Sección de justificación
-Este trabajo se realiza con el propósito de analizar la importancia de los ríos en el ecosistema y cómo la contaminación afecta tanto al medio ambiente como a la sociedad. 
-\newpage % Salto de página
+% ---------------- SECCIONES ----------------
+\input{secciones/antecedentes}
+\newpage
 
-% ---------------- PLANTEAMIENTO DEL PROBLEMA ----------------
-\section{Planteamiento del problema} % Sección del problema
-La contaminación de los ríos es una problemática global que afecta la disponibilidad de agua potable y la biodiversidad acuática. % Texto de ejemplo
-\newpage % Salto de página
+\input{secciones/planteamiento}
+\newpage
 
-% ---------------- CONTENIDO ----------------
-\section{Principales ríos del mundo} % Sección principal
+\input{secciones/objetivos}
+\newpage
 
-\subsection{Río Amazonas} % Subtema
-El río Amazonas es el más caudaloso del mundo y atraviesa varios países de Sudamérica. % Texto de ejemplo
+\input{secciones/justificacion}
+\newpage
 
-\subsection{Río Nilo} % Subtema
-El río Nilo es uno de los más largos del mundo y ha sido fundamental para el desarrollo de civilizaciones. % Texto de ejemplo
+\input{secciones/marco_teorico}
+\newpage
 
-\subsection{Río Yangtsé} % Subtema
-El río Yangtsé es el más largo de Asia y tiene gran importancia económica. % Texto de ejemplo
+\input{secciones/hipotesis}
+\newpage
 
-% ---------------- CONTAMINACIÓN ----------------
-\section{Tipos de contaminación en los ríos} % Nueva sección
+\input{secciones/muestra}
+\newpage
 
-\subsection{Contaminación industrial} % Subtema
-Proviene de fábricas que descargan residuos químicos en el agua. % Texto de ejemplo
+\input{secciones/glosario}
+\newpage
 
-\subsection{Contaminación doméstica} % Subtema
-Incluye desechos provenientes de hogares, como aguas residuales. % Texto de ejemplo
+\setlength{\bibitemsep}{1em}
+\printbibliography[heading=bibintoc, title={Referencias}]
 
-\subsection{Contaminación agrícola} % Subtema
-Se produce por el uso de pesticidas y fertilizantes. % Texto de ejemplo
-
-% ---------------- CONSECUENCIAS ----------------
-\section{Consecuencias de la contaminación} % Nueva sección
-
-\subsection{Impacto ambiental} % Subtema
-Afecta la flora y fauna acuática. % Texto de ejemplo
-
-\subsection{Impacto en la salud} % Subtema
-Puede provocar enfermedades en los seres humanos. % Texto de ejemplo
-
-% ---------------- CONCLUSIÓN ----------------
-\section{Conclusión} % Sección final
-
-Es fundamental implementar medidas para reducir la contaminación de los ríos y proteger los recursos hídricos. % Texto de ejemplo
-
-
-\end{document} % Fin del documento
+\end{document}
