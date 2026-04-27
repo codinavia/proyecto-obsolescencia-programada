@@ -1,7 +1,6 @@
 *.aux
 *.log
 *.toc
-*.bbl
 *.bcf
 *.blg
 *.fls
@@ -9,3 +8,5 @@
 *.synctex.gz
 *.run.xml
 *.pdf
+*.out
+*.bbl

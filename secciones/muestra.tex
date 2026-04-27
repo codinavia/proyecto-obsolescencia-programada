@@ -1,4 +1,88 @@
 \section{Muestra}
-La presente investigación tomará como enfoque principal la población del municipio de Culiacán, Sinaloa, México. 
-De acuerdo con el último Censo de Población y Vivienda realizado por el Instituto Nacional de Estadística y Geografía \parencite[p.~23]{inegi2021}., 
-Culiacán registra una población total de 1,003,530 habitantes, lo que representa el 33.2\% de la población total del estado de Sinaloa. 
+
+La presente investigación tomará como enfoque principal la población del municipio 
+de Culiacán, Sinaloa, México. De acuerdo con el último Censo de Población y Vivienda 
+realizado por el Instituto Nacional de Estadística y Geografía \parencite[p.~23]{inegi2021}, Culiacán registra una población total 
+de 1,003,530 habitantes, lo que representa el 33.2\% de la población total del 
+estado de Sinaloa.
+
+Dentro de este universo, se delimitó como población de estudio a los habitantes de 27 
+años de edad. Este grupo resulta de particular interés debido a que ha transitado por 
+las distintas etapas del comercio moderno: desde la adquisición de productos exclusivamente 
+a través de catálogos o tiendas físicas, hasta la adopción de las compras en línea, 
+cada una con estrategias de marketing propias. Dicha trayectoria les otorga una perspectiva 
+amplia frente al consumo de cualquier tipo de producto. Asimismo, por tratarse de adultos 
+en plena vida laboral —y en la mayoría de los casos con los estudios concluidos—, es 
+razonable suponer que ya han adquirido los tipos de productos en los que se centra 
+esta investigación: laptops y smartphones. A esto se suma que una persona en esta 
+etapa de vida cuenta con mayor criterio, autonomía económica y experiencia acumulada 
+en decisiones de compra.
+
+De acuerdo con el Censo de Población y Vivienda 2020, la población de Culiacán 
+correspondiente al rango de 27 años o más asciende a 578,109 habitantes. Este dato 
+es congruente con la edad mediana registrada por el propio INEGI para ese año, que 
+fue de 29 años; en efecto, el 50\% de la población total del municipio equivale a:
+
+\[
+\frac{1{,}003{,}530}{2} = 501{,}765 \text{ habitantes}
+\]
+
+lo que confirma que más de la mitad de la población se concentra en edades cercanas 
+al rango de interés.
+
+Con el fin de obtener una estimación más precisa para el año 2026, se incorporó 
+al cálculo la población que, en 2020, se encontraba en el rango de 20 a 24 años, 
+puesto que dichas personas habrán alcanzado los 27 años o más transcurridos seis 
+años. Al sumar este grupo al total anterior, se obtiene una base poblacional 
+ampliada de:
+
+\[
+578{,}109 + 88{,}495 = 666{,}604 \text{ habitantes}
+\]
+
+Además, para proyectar esta cifra a 2026, se descontó la mortalidad estimada del periodo. 
+Tomando como referencia un promedio de 18,902 defunciones anuales registradas en 
+Sinaloa a partir de 2020 \parencite{inegi_mortalidad}, y considerando que Culiacán concentra el 33.2\% de la 
+población estatal, le corresponden aproximadamente:
+
+\[
+18{,}902 \times 0.332 \approx 6{,}275 \text{ defunciones anuales en Culiacán}
+\]
+
+Descontando estas defunciones acumuladas durante el periodo 2020--2026, la 
+población estimada en el rango de 27 años o más para el presente año es de:
+
+\[
+666{,}604 - (6{,}275 \times 6) = 666{,}604 - 37{,}650 \approx 628{,}954 
+\text{ habitantes}
+\]
+
+Con los valores anteriormente detallados, se procedió a calcular el tamaño de 
+muestra necesario para la presente investigación. Empleando la fórmula
+propuesta por \textcite[p.~75]{cochran1977}:
+\[
+n = \frac{\dfrac{t^2 PQ}{d^2}}{1 + \dfrac{1}{N}\left(\dfrac{t^2 PQ}{d^2} - 1\right)}
+\]
+
+\noindent con un nivel de confianza del 
+95\% ($t = 1.96$), una proporción esperada de $P = 0.5$, y un margen de error 
+de $d = 0.05$, se obtuvo:
+
+\[
+n = \frac{\dfrac{(1.96)^2 (0.5)(0.5)}{(0.05)^2}}{1 + \dfrac{1}{1{,}003{,}530}
+\left(\dfrac{(1.96)^2 (0.5)(0.5)}{(0.05)^2} - 1\right)}
+= \frac{384.16}{1 + \dfrac{383.16}{1{,}003{,}530}} \approx 384 \textrm{ encuestados}
+\]
+
+Posteriormente, aplicando la asignación proporcional por estrato \parencite[p.~91]{cochran1977},
+se determinó la muestra correspondiente al segmento de habitantes de 27 años o más dentro del municipio de Culiacán 
+con respecto a la población total del municipio:
+
+\[
+n_h = n \cdot \frac{N_h}{N} = 384 \cdot \frac{628{,}954}{1{,}003{,}530} 
+\approx 241 \textrm{ encuestados}
+\]
+
+Por lo tanto, la muestra definitiva para esta investigación quedó establecida 
+en \textbf{241 encuestados}, representando de manera proporcional al segmento 
+poblacional de interés dentro del municipio de Culiacán, Sinaloa.

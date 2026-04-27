@@ -150,6 +150,40 @@
       \verb https://www.ebsco.com/research-starters/law/right-repair
       \endverb
     \endentry
+    \entry{cochran1977}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dbe9ae6cc9e5e24a66a2b712affd05de}{%
+           family={Cochran},
+           familyi={C\bibinitperiod},
+           given={William\bibnamedelima G.},
+           giveni={W\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Nueva York}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{dbe9ae6cc9e5e24a66a2b712affd05de}
+      \strng{fullhash}{dbe9ae6cc9e5e24a66a2b712affd05de}
+      \strng{fullhashraw}{dbe9ae6cc9e5e24a66a2b712affd05de}
+      \strng{bibnamehash}{dbe9ae6cc9e5e24a66a2b712affd05de}
+      \strng{authorbibnamehash}{dbe9ae6cc9e5e24a66a2b712affd05de}
+      \strng{authornamehash}{dbe9ae6cc9e5e24a66a2b712affd05de}
+      \strng{authorfullhash}{dbe9ae6cc9e5e24a66a2b712affd05de}
+      \strng{authorfullhashraw}{dbe9ae6cc9e5e24a66a2b712affd05de}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{title}{Sampling Techniques}
+      \field{year}{1977}
+    \endentry
     \entry{corrocher2025}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=fe59e05fb5b1ddd171975b870a4c6df1}{%
@@ -345,21 +379,22 @@
     \endentry
     \entry{inegi2021}{report}{}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=148785b56bfec7ae2ca446233b8c9322}{%
-           family={{Instituto Nacional de Estadística y Geografía}},
+        {{un=0,uniquepart=base,hash=07f82547efad7896cad6336c74fb102f}{%
+           family={{INEGI}},
            familyi={I\bibinitperiod}}}%
       }
       \list{institution}{1}{%
         {INEGI}%
       }
-      \strng{namehash}{148785b56bfec7ae2ca446233b8c9322}
-      \strng{fullhash}{148785b56bfec7ae2ca446233b8c9322}
-      \strng{fullhashraw}{148785b56bfec7ae2ca446233b8c9322}
-      \strng{bibnamehash}{148785b56bfec7ae2ca446233b8c9322}
-      \strng{authorbibnamehash}{148785b56bfec7ae2ca446233b8c9322}
-      \strng{authornamehash}{148785b56bfec7ae2ca446233b8c9322}
-      \strng{authorfullhash}{148785b56bfec7ae2ca446233b8c9322}
-      \strng{authorfullhashraw}{148785b56bfec7ae2ca446233b8c9322}
+      \strng{namehash}{07f82547efad7896cad6336c74fb102f}
+      \strng{fullhash}{07f82547efad7896cad6336c74fb102f}
+      \strng{fullhashraw}{07f82547efad7896cad6336c74fb102f}
+      \strng{bibnamehash}{07f82547efad7896cad6336c74fb102f}
+      \strng{authorbibnamehash}{07f82547efad7896cad6336c74fb102f}
+      \strng{authornamehash}{07f82547efad7896cad6336c74fb102f}
+      \strng{authorfullhash}{07f82547efad7896cad6336c74fb102f}
+      \strng{authorfullhashraw}{07f82547efad7896cad6336c74fb102f}
+      \field{extraname}{1}
       \field{sortinit}{I}
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
       \field{extradatescope}{labelyear}
@@ -375,6 +410,38 @@
       \endverb
       \verb{url}
       \verb https://www.inegi.org.mx/contenidos/productos/prod_serv/contenidos/espanol/bvinegi/productos/nueva_estruc/702825197988.pdf
+      \endverb
+    \endentry
+    \entry{inegi_mortalidad}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=07f82547efad7896cad6336c74fb102f}{%
+           family={{INEGI}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{07f82547efad7896cad6336c74fb102f}
+      \strng{fullhash}{07f82547efad7896cad6336c74fb102f}
+      \strng{fullhashraw}{07f82547efad7896cad6336c74fb102f}
+      \strng{bibnamehash}{07f82547efad7896cad6336c74fb102f}
+      \strng{authorbibnamehash}{07f82547efad7896cad6336c74fb102f}
+      \strng{authornamehash}{07f82547efad7896cad6336c74fb102f}
+      \strng{authorfullhash}{07f82547efad7896cad6336c74fb102f}
+      \strng{authorfullhashraw}{07f82547efad7896cad6336c74fb102f}
+      \field{extraname}{2}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{INEGI. Sistema de consulta OLAP}
+      \field{title}{Defunciones registradas (mortalidad general)}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.inegi.org.mx/sistemas/olap/Proyectos/bd/continuas/mortalidad/MortalidadGeneral.asp
+      \endverb
+      \verb{url}
+      \verb https://www.inegi.org.mx/sistemas/olap/Proyectos/bd/continuas/mortalidad/MortalidadGeneral.asp
       \endverb
     \endentry
     \entry{kirchherr2017}{article}{}{}
@@ -832,6 +899,40 @@
       \verb https://www.ebsco.com/research-starters/law/right-repair
       \endverb
     \endentry
+    \entry{cochran1977}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dbe9ae6cc9e5e24a66a2b712affd05de}{%
+           family={Cochran},
+           familyi={C\bibinitperiod},
+           given={William\bibnamedelima G.},
+           giveni={W\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Nueva York}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{dbe9ae6cc9e5e24a66a2b712affd05de}
+      \strng{fullhash}{dbe9ae6cc9e5e24a66a2b712affd05de}
+      \strng{fullhashraw}{dbe9ae6cc9e5e24a66a2b712affd05de}
+      \strng{bibnamehash}{dbe9ae6cc9e5e24a66a2b712affd05de}
+      \strng{authorbibnamehash}{dbe9ae6cc9e5e24a66a2b712affd05de}
+      \strng{authornamehash}{dbe9ae6cc9e5e24a66a2b712affd05de}
+      \strng{authorfullhash}{dbe9ae6cc9e5e24a66a2b712affd05de}
+      \strng{authorfullhashraw}{dbe9ae6cc9e5e24a66a2b712affd05de}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{title}{Sampling Techniques}
+      \field{year}{1977}
+    \endentry
     \entry{corrocher2025}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=fe59e05fb5b1ddd171975b870a4c6df1}{%
@@ -1027,21 +1128,22 @@
     \endentry
     \entry{inegi2021}{report}{}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=148785b56bfec7ae2ca446233b8c9322}{%
-           family={{Instituto Nacional de Estadística y Geografía}},
+        {{un=0,uniquepart=base,hash=07f82547efad7896cad6336c74fb102f}{%
+           family={{INEGI}},
            familyi={I\bibinitperiod}}}%
       }
       \list{institution}{1}{%
         {INEGI}%
       }
-      \strng{namehash}{148785b56bfec7ae2ca446233b8c9322}
-      \strng{fullhash}{148785b56bfec7ae2ca446233b8c9322}
-      \strng{fullhashraw}{148785b56bfec7ae2ca446233b8c9322}
-      \strng{bibnamehash}{148785b56bfec7ae2ca446233b8c9322}
-      \strng{authorbibnamehash}{148785b56bfec7ae2ca446233b8c9322}
-      \strng{authornamehash}{148785b56bfec7ae2ca446233b8c9322}
-      \strng{authorfullhash}{148785b56bfec7ae2ca446233b8c9322}
-      \strng{authorfullhashraw}{148785b56bfec7ae2ca446233b8c9322}
+      \strng{namehash}{07f82547efad7896cad6336c74fb102f}
+      \strng{fullhash}{07f82547efad7896cad6336c74fb102f}
+      \strng{fullhashraw}{07f82547efad7896cad6336c74fb102f}
+      \strng{bibnamehash}{07f82547efad7896cad6336c74fb102f}
+      \strng{authorbibnamehash}{07f82547efad7896cad6336c74fb102f}
+      \strng{authornamehash}{07f82547efad7896cad6336c74fb102f}
+      \strng{authorfullhash}{07f82547efad7896cad6336c74fb102f}
+      \strng{authorfullhashraw}{07f82547efad7896cad6336c74fb102f}
+      \field{extraname}{1}
       \field{sortinit}{I}
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
       \field{extradatescope}{labelyear}
@@ -1057,6 +1159,38 @@
       \endverb
       \verb{url}
       \verb https://www.inegi.org.mx/contenidos/productos/prod_serv/contenidos/espanol/bvinegi/productos/nueva_estruc/702825197988.pdf
+      \endverb
+    \endentry
+    \entry{inegi_mortalidad}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=07f82547efad7896cad6336c74fb102f}{%
+           family={{INEGI}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{07f82547efad7896cad6336c74fb102f}
+      \strng{fullhash}{07f82547efad7896cad6336c74fb102f}
+      \strng{fullhashraw}{07f82547efad7896cad6336c74fb102f}
+      \strng{bibnamehash}{07f82547efad7896cad6336c74fb102f}
+      \strng{authorbibnamehash}{07f82547efad7896cad6336c74fb102f}
+      \strng{authornamehash}{07f82547efad7896cad6336c74fb102f}
+      \strng{authorfullhash}{07f82547efad7896cad6336c74fb102f}
+      \strng{authorfullhashraw}{07f82547efad7896cad6336c74fb102f}
+      \field{extraname}{2}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{INEGI. Sistema de consulta OLAP}
+      \field{title}{Defunciones registradas (mortalidad general)}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.inegi.org.mx/sistemas/olap/Proyectos/bd/continuas/mortalidad/MortalidadGeneral.asp
+      \endverb
+      \verb{url}
+      \verb https://www.inegi.org.mx/sistemas/olap/Proyectos/bd/continuas/mortalidad/MortalidadGeneral.asp
       \endverb
     \endentry
     \entry{kirchherr2017}{article}{}{}
