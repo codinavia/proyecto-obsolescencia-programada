@@ -5,6 +5,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc} 
 \usepackage{csquotes}
+\usepackage{enumitem}
  
 \usepackage[style=apa, backend=biber]{biblatex}
 \DeclareLanguageMapping{spanish}{spanish-apa}
@@ -66,13 +67,17 @@
 \input{secciones/hipotesis}
 \newpage
 
-\input{secciones/muestra}
+\input{secciones/bosquejo_metodo}
+\newpage
+
+\setlength{\bibitemsep}{1em}
+\printbibliography[heading=bibintoc, title={Referencias}]
 \newpage
 
 \input{secciones/glosario}
 \newpage
 
-\setlength{\bibitemsep}{1em}
-\printbibliography[heading=bibintoc, title={Referencias}]
+\input{secciones/anexo}
+\newpage
 
 \end{document}
