@@ -1,0 +1,59 @@
+\section{Requisitos}
+
+\subsection{Funcionales}
+Los requisitos funcionales en tiempo real que describen lo que la aplicación
+le permitirá realizar al usuario son los siguientes:
+
+\begin{center}
+\begin{tabular}{c p{12cm}}
+\toprule
+\textbf{Requisito} & \textbf{Descripción} \\
+\midrule
+01 & El sistema permite al usuario escanear un código de barras EAN, UPC
+     mediante la cámara del dispositivo móvil. \\[6pt]
+
+02 & El sistema proporciona información técnica, reseñas del producto, así como
+     certificaciones asociadas a la empresa vendedora. \\[6pt]
+
+03 & El sistema almacena en caché la respuesta asociada a un código de barras
+     para evitar llamadas redundantes a las APIs externas. \\[6pt]
+
+04 & Un usuario debe poder publicar una reseña respondiendo a diversas preguntas
+     por producto escaneado. \\[6pt]
+
+05 & El sistema debe mostrar el promedio de calificaciones del producto en
+     diversas categorias: durabilidad, reparabilidad, sustentabilidad, desempeño. \\[6pt]
+
+06 & El sistema proporciona al usuario un glosario de términos relevantes para
+     una mejor comprensión de la ficha tecnológica. \\[6pt]
+
+07 & El sistema debe permitir una sola reseña por usuario. \\[6pt]
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{No Funcionales}
+Los requisitos no funcionales que describen las especificaciones de seguridad, fiabilidad, usabilidad que
+la aplicación tiene como objetivo alcanzar son los siguientes:
+
+\begin{center}
+\begin{tabular}{c p{12cm}}
+\toprule
+\textbf{Requisito} & \textbf{Descripción} \\
+\midrule
+08 & El sistema debe retornar la respuesta agregada al cliente en un tiempo
+     máximo aceptable para una experiencia fluida en red móvil. \\[6pt]
+
+09 & El sistema debe continuar funcionando parcialmente si una o más
+     APIs externas no responden, sin bloquear toda la respuesta al cliente. \\[6pt]
+
+10 & El sistema debe limitar el número de peticiones por cliente para
+   prevenir abuso del servicio. \\[6pt]
+
+11 & El proceso de escaneo debe ser rápido e intuitivo para el usuario. \\[6pt]
+
+12 & El sistema debe estar organizado en módulos independientes para
+   facilitar el mantenimiento. \\[6pt]
+\bottomrule
+\end{tabular}
+\end{center}

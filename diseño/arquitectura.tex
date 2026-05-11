@@ -1,5 +1,12 @@
 \section{Arquitectura}
 
+A continuación se presenta la arquitectura de [NOMBRE APLICACIÓN], la aplicación
+móvil objetivo del proyecto. Se mostrará lo siguiente: tipo de arquitectura, patrones
+arquitectónicos, tecnologías  seleccionadas, así como los criterios que guiaron 
+cada decisión de diseño.
+
+\subsection{Diseño}
+
 El sistema adoptará una \textbf{arquitectura cliente-servidor} con un backend
 monolítico modular, implementando el patrón de diseño \textit{gateway
 aggregation} con el objetivo de centralizar la lógica de integración con
@@ -11,15 +18,50 @@ intermediario que recibe una sola petición del cliente, la descompone en
 múltiples llamadas a servicios backend, agrega los resultados y devuelve una
 única respuesta.
 
-
-\begin{figure}[h!]
+\begin{figure}[ht]
     \centering
     \fbox{\includegraphics[width=0.8\textwidth]{imagenes/gateway-aggregation.png}}
     \caption{Gateway Aggregation}\label{fig:gateway-aggregation}
 \end{figure}
 
-\begin{figure}[h!]
+Al utilizar este patrón, se pretende que el sistema tenga la capacidad de hacer llamadas
+a diversas APIs externas, devolviendo al cliente una sola respuesta basada en
+la información obtenida por cada API.\@
+
+Esto resulta especialmente útil para [NOMBRE APLICACIÓN] por tres
+razones principales. 
+\begin{enumerate}
+    \item Los usuarios interactúan con la aplicación desde dispositivos móviles, donde
+          la latencia de red es variable e inpredecible; realizar cuatro llamadas secuenciales
+          desde el cliente puede multiplicar dicha latencia, mientras que el gateway las ejecuta
+          en paralelo desde una conexión estable en el servidor.
+    
+    \item Las credenciales de acceso a las APIs permanecen confinadas al sistema, eliminando el
+          riesgo de esposición al cliente.
+
+    \item Si en un futuro se incorpora una nueva fuente de datos, el cambio se realiza unicamente
+          en el gateway sin modificar la aplicación móvil.
+\end{enumerate}
+
+
+Tomando en cuenta el patrón descrito anteriormente, el sistema tomará un diseño arquitectónico como
+el mostrado en la Figura~\ref{fig:diagrama-sistema}:
+
+\begin{figure}[ht]
     \centering
     \fbox{\includegraphics[width=0.8\textwidth]{imagenes/diagrama-sistema.png}}
     \caption{Diagrama del Sistema}\label{fig:diagrama-sistema}
 \end{figure}
+
+\noindent donde se contarán con los siguientes componentes:
+\begin{center}
+\begin{tabular}{l p{5cm} p{6cm}}
+\toprule
+\textbf{Atributo} & \textbf{Detalle} & \textbf{Descripci\'on} \\
+\midrule
+Framework       & Expo                   & Texto \\[6pt]
+Patrón          & Model-View-ViewModel   & Texto \\[6pt]
+Almacenamiento  & SQL Server             & Texto \\[6pt]
+\bottomrule
+\end{tabular}
+\end{center}
