@@ -1,0 +1,72 @@
+\subsection{CU-03: Ver Sitios de Reparación Cercanos}
+Este caso de uso describe el proceso mediante el cual un usuario podrá 
+consultar sitios de reparación cercanos a su ubicación actual, asociados 
+al tipo de producto escaneado, con el objetivo de fomentar la cultura 
+de reparación y la sustentabilidad.
+
+\begin{longtable}{p{3.5cm} p{10cm} p{1cm}}\toprule \textbf{Caso de Uso} &
+\textit{Visitar Sitios Cercanos de Reparación} & \textit{03} \\
+
+\midrule
+\textbf{Actores}       & Usuario             \\[6pt]
+\textbf{Tipo}          & Primario            \\[6pt]
+\textbf{Precondición}  & El usuario debe haber escaneado previamente un producto
+y haber habilitado el permiso de ubicación.  \\[6pt]
+\textbf{Postcondición} & El sistema muestra un listado de sitios de reparación
+cercanos a la ubicación actual del usuario.  \\[6pt]
+
+\midrule
+\multicolumn{3}{l}{\textbf{Propósito}} \\*[2pt]
+\multicolumn{3}{p{14.5cm}}{Permitir que el usuario encuentre sitios de
+reparación cercanos a su ubicación actual.} \\[6pt]
+
+\midrule
+\multicolumn{3}{l}{\textbf{Resumen}} \\*[2pt]
+\multicolumn{3}{p{14.5cm}}{El usuario, tras escanear un producto, puede
+consultar sitios de reparación cercanos a su ubicación. El sistema obtiene la
+posición actual del dispositivo, consulta una API externa y muestra un listado
+con nombre, dirección, distancia, teléfono, horario y calificación de cada
+establecimiento. El usuario puede seleccionar uno y obtener la ruta directamente
+desde la aplicación.} \\[6pt]
+
+\midrule
+\multicolumn{3}{l}{\textbf{Curso Normal}} \\*[2pt]
+\multicolumn{3}{p{14.5cm}}{
+  \begin{enumerate}[topsep=0pt, partopsep=0pt, leftmargin=30pt]
+    \item El usuario escanea el producto y accede a su información.
+    \item El usuario selecciona la opción \textit{Ver sitios de reparación
+    cercanos}.
+    \item El sistema obtiene la ubicación actual del dispositivo del usuario.
+    \item El sistema consulta la API de sitios de reparación con la ubicación y
+    la categoría del producto escaneado.
+    \item El sistema muestra un listado de sitios de reparación con la siguiente
+    información por cada uno:
+     \begin{enumerate}[topsep=0pt, partopsep=0pt, leftmargin=30pt]
+        \item \textbf{Nombre} del establecimiento.
+        \item \textbf{Dirección} y distancia aproximada al usuario.
+        \item \textbf{Teléfono} de contacto.
+        \item \textbf{Horario} de atención.
+        \item \textbf{Calificación} promedio del establecimiento.
+      \end{enumerate}
+    \item El usuario selecciona un sitio de reparación de la lista.
+    \item El sistema abre el mapa del dispositivo con la ruta hacia el sitio
+    seleccionado.
+  \end{enumerate}
+}
+
+\midrule
+\multicolumn{3}{l}{\textbf{Cursos Alternos}} \\[2pt]
+\multicolumn{3}{p{14.5cm}}{
+  \begin{enumerate}[topsep=0pt, partopsep=0pt, leftmargin=30pt]
+    \item[3a.] Si el usuario no ha habilitado el permiso de ubicación, el
+    sistema muestra un mensaje solicitando activarlo y redirige a la
+    configuración del dispositivo.
+    \item[4a.] Si no se encuentran sitios de reparación cercanos, el sistema
+    muestra un mensaje informativo.
+    \item[4b.] Si no hay conexión a internet, el sistema muestra un mensaje de
+    error indicando que se requiere conexión para realizar la búsqueda.
+  \end{enumerate}
+}
+
+\bottomrule
+\end{longtable}

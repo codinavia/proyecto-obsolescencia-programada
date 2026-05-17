@@ -1,0 +1,64 @@
+
+\subsection{CU-02: Dejar Reseña de Producto}
+Este caso de uso describe el proceso mediante un usuario podrá 
+dejar una reseña sobre un producto previamente escaneado. \\
+
+\begin{longtable}{p{3.5cm} p{10cm} p{1cm}}\toprule \textbf{Caso de Uso} &
+\textit{Dejar Reseñas} & \textit{02} \\
+\midrule
+\textbf{Actores}       & Usuario (anónimo)   \\[6pt]
+\textbf{Tipo}          & Primario            \\[6pt]
+\textbf{Precondición}  & El usuario debe haber escaneado un
+producto. \\[6pt]
+\textbf{Postcondición} & El sistema almacena la reseña y la asocia al código de
+barras del producto. \\[6pt]
+\midrule
+\multicolumn{3}{l}{\textbf{Propósito}} \\*[2pt]
+\multicolumn{3}{p{14.5cm}}{Permitir que cualquier usuario, sin necesidad de
+registro, pueda dejar una reseña sobre un producto escaneado.}
+\\[6pt]
+\midrule
+\multicolumn{3}{l}{\textbf{Resumen}} \\*[2pt]
+\multicolumn{3}{p{14.5cm}}{El usuario, sin necesidad de registrarse, responde un
+cuestionario estructurado sobre el producto escaneado. Las preguntas abarcan
+aspectos de uso, frecuencia, durabilidad, reparabilidad, sustentabilidad y
+desempeño. El sistema almacena las respuestas y las asocia al producto para
+enriquecer la información disponible para futuros usuarios.} \\[6pt]
+\bottomrule
+\end{longtable}
+
+\subsubsection{Curso Normal}
+  \begin{enumerate}
+    \item El usuario escanea el producto y accede a su información.
+    \item El usuario selecciona la opción \textit{Dejar reseña}.
+    \item El sistema presenta un cuestionario estructurado con las
+    secciones:
+    \begin{enumerate}
+        \item \textbf{Uso:} ¿Cómo utiliza el producto? ¿Para qué actividades lo
+        emplea?
+        \item \textbf{Frecuencia:} ¿Con qué frecuencia lo usa? (diario, semanal,
+        mensual, ocasional)
+        \item \textbf{Durabilidad:} ¿Cuánto tiempo lleva usándolo? ¿Ha
+        presentado desgaste?
+        \item \textbf{Reparabilidad:} ¿Ha necesitado repararlo? ¿Fue fácil
+        conseguir refacciones?
+        \item \textbf{Sustentabilidad:} ¿Considera que el producto es amigable
+        con el medio ambiente?
+        \item \textbf{Desempeño:} ¿El producto cumple con lo prometido por el
+        fabricante?
+    \end{enumerate}
+    \item El usuario responde el cuestionario y confirma el envío.
+    \item El sistema valida que al menos las secciones obligatorias estén
+    completas.
+    \item El sistema almacena la reseña vinculada al código de barras del
+    producto.
+    \item El sistema muestra un mensaje de confirmación al usuario.
+  \end{enumerate}
+
+\subsubsection{Cursos Alternos}
+  \begin{enumerate}
+    \item[5a.] Si el usuario no completa las secciones obligatorias, el sistema
+    resalta los campos faltantes y solicita completarlos antes de continuar.
+    \item[4a.] El usuario puede cancelar el cuestionario en cualquier momento
+    sin que se guarde ningún dato.
+  \end{enumerate}

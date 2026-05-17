@@ -1,0 +1,39 @@
+\subsection{CU-01: Escaneo de Producto}
+Este caso de uso describe el proceso mediante el cual el usuario podrá
+el código de barras de un producto utilizando la cámara de su dispositivo móvil.
+El sistema retornará información relevante acerca del prodcuto. \\
+
+\begin{table}[h]
+\centering
+\begin{tabular}{p{3.5cm} p{10cm} p{1cm}}\toprule \textbf{Caso de Uso} &
+\textit{Escaneo de Producto} & \textit{01} \\
+\midrule
+\textbf{Actores}       & Usuario   \\[6pt]
+\textbf{Tipo}          & Primario  \\[6pt]
+\textbf{Precondición}  & El usuario debe haber habilitado los permisos de:
+cámara, ubicación. \\[6pt]
+\textbf{Postcondición} & El sistema muestra la información relacionada al
+producto escaneado. \\[6pt]
+\midrule
+\multicolumn{3}{l}{\textbf{Propósito}} \\[6pt]
+\multicolumn{3}{p{14.5cm}}{Establecer el flujo del escaneo de productos mediante
+la cámara del dispositivo móvil.} \\[6pt]
+\midrule
+\multicolumn{3}{l}{\textbf{Resumen}} \\[6pt]
+\multicolumn{3}{p{14.5cm}}{El usuario escanea con la cámara de su celular el
+código de barras del producto a consultar. El sistema recopila la información
+relevante: datos técnicos, certificaciones de la empresa vendedora y ubicaciones
+de reparación cercanas al usuario.} \\[6pt]
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Curso Normal}
+  \begin{enumerate}
+    \item El usuario abre la aplicación y selecciona la opción de escaneo.
+    \item El sistema activa la cámara del dispositivo.
+    \item El usuario apunta la cámara al código de barras del producto.
+    \item El sistema detecta y decodifica el código EAN/UPC.\@
+    \item El sistema consulta las APIs externas con el código obtenido.
+    \item El sistema muestra la información técnica, reseñas y certificaciones.
+  \end{enumerate}
