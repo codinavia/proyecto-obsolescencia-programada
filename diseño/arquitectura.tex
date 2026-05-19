@@ -5,7 +5,7 @@ móvil objetivo del proyecto. Se mostrará lo siguiente: tipo de arquitectura, p
 arquitectónicos, tecnologías  seleccionadas, así como los criterios que guiaron 
 cada decisión de diseño.
 
-\subsection{Diseño}
+\subsection{Sistema}
 
 El sistema adoptará una \textbf{arquitectura cliente-servidor} con un backend
 monolítico modular, implementando el patrón de diseño \textit{gateway
@@ -57,11 +57,22 @@ el mostrado en la Figura~\ref{fig:diagrama-sistema}:
 \begin{center}
 \begin{tabular}{l p{5cm} p{6cm}}
 \toprule
-\textbf{Atributo} & \textbf{Detalle} & \textbf{Descripci\'on} \\
+\textbf{Atributo} & \textbf{Detalle} & \textbf{Descripción} \\
 \midrule
-Framework       & Expo                   & Texto \\[6pt]
-Patrón          & Model-View-ViewModel   & Texto \\[6pt]
-Almacenamiento  & SQL Server             & Texto \\[6pt]
+Framework       & Expo                  & Permite compilar la aplicación para
+                                          Android e iOS desde una única base de
+                                          código. \\[6pt]
+Patrón          & Model-View-ViewModel  & Separa la lógica de presentación de la
+                                          interfaz de usuario mediante un
+                                          \textit{ViewModel} que expone el
+                                          estado y los comandos a la vista,
+                                          facilitando las pruebas y el
+                                          mantenimiento del código. \\[6pt]
+Almacenamiento  & MySQL                 & Sistema gestor de base de datos
+                                          relacional utilizado para persistir la
+                                          información de reseñas y
+                                          certificaciones consultadas a través
+                                          del gateway. \\[6pt]
 \bottomrule
 \end{tabular}
 \end{center}

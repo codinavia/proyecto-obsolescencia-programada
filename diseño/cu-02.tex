@@ -3,7 +3,9 @@
 Este caso de uso describe el proceso mediante un usuario podrá 
 dejar una reseña sobre un producto previamente escaneado. \\
 
-\begin{longtable}{p{3.5cm} p{10cm} p{1cm}}\toprule \textbf{Caso de Uso} &
+\begin{table}[h]
+\centering
+\begin{tabular}{p{3.5cm} p{10cm} p{1cm}}\toprule \textbf{Caso de Uso} &
 \textit{Dejar Reseñas} & \textit{02} \\
 \midrule
 \textbf{Actores}       & Usuario (anónimo)   \\[6pt]
@@ -25,9 +27,14 @@ aspectos de uso, frecuencia, durabilidad, reparabilidad, sustentabilidad y
 desempeño. El sistema almacena las respuestas y las asocia al producto para
 enriquecer la información disponible para futuros usuarios.} \\[6pt]
 \bottomrule
-\end{longtable}
+\end{tabular}
+\end{table}
 
-\subsubsection{Curso Normal}
+\begin{table}[h]
+\centering
+\begin{tabular}{p{15.5cm}}\toprule \textbf{Descripción} \\
+\midrule
+\textbf{Flujo Principal} \\[2pt]
   \begin{enumerate}
     \item El usuario escanea el producto y accede a su información.
     \item El usuario selecciona la opción \textit{Dejar reseña}.
@@ -53,12 +60,17 @@ enriquecer la información disponible para futuros usuarios.} \\[6pt]
     \item El sistema almacena la reseña vinculada al código de barras del
     producto.
     \item El sistema muestra un mensaje de confirmación al usuario.
-  \end{enumerate}
-
-\subsubsection{Cursos Alternos}
+  \end{enumerate}\\
+\midrule
+\textbf{Flujo Alterno} \\[2pt]
   \begin{enumerate}
     \item[5a.] Si el usuario no completa las secciones obligatorias, el sistema
     resalta los campos faltantes y solicita completarlos antes de continuar.
     \item[4a.] El usuario puede cancelar el cuestionario en cualquier momento
     sin que se guarde ningún dato.
   \end{enumerate}
+
+\\
+\bottomrule
+\end{tabular}
+\end{table}

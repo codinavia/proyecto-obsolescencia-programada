@@ -3,7 +3,7 @@ Este caso de uso describe el proceso mediante el cual el usuario podrá
 el código de barras de un producto utilizando la cámara de su dispositivo móvil.
 El sistema retornará información relevante acerca del prodcuto. \\
 
-\begin{table}[h]
+\begin{table}[ht]
 \centering
 \begin{tabular}{p{3.5cm} p{10cm} p{1cm}}\toprule \textbf{Caso de Uso} &
 \textit{Escaneo de Producto} & \textit{01} \\
@@ -28,12 +28,39 @@ de reparación cercanas al usuario.} \\[6pt]
 \end{tabular}
 \end{table}
 
-\subsubsection{Curso Normal}
-  \begin{enumerate}
-    \item El usuario abre la aplicación y selecciona la opción de escaneo.
-    \item El sistema activa la cámara del dispositivo.
-    \item El usuario apunta la cámara al código de barras del producto.
-    \item El sistema detecta y decodifica el código EAN/UPC.\@
-    \item El sistema consulta las APIs externas con el código obtenido.
-    \item El sistema muestra la información técnica, reseñas y certificaciones.
-  \end{enumerate}
+\begin{table}[ht]
+\centering
+\begin{tabular}{p{15.5cm}}
+\toprule
+\textbf{Descripción} \\
+\midrule
+\textbf{Flujo Principal} \\[2pt]
+\begin{enumerate}[topsep=0pt, partopsep=0pt, leftmargin=30pt]
+\item El usuario abre la aplicación y selecciona la opción de escaneo.
+\item El sistema activa la cámara del dispositivo.
+\item El usuario apunta la cámara al código de barras del producto.
+\item El sistema detecta y decodifica el código EAN/UPC\@.
+\item El sistema consulta las APIs externas con el código obtenido.
+\item El sistema muestra la información técnica, reseñas y certificaciones.
+\end{enumerate} \\
+\midrule
+\textbf{Flujos Alternativos} \\[2pt]
+\begin{enumerate}[topsep=0pt, partopsep=0pt, leftmargin=30pt]
+\item[2a.] El dispositivo no tiene cámara disponible o está siendo usada
+    por otra aplicación; el sistema muestra un mensaje de error.
+\item[2b.] El usuario deniega el permiso de cámara; el sistema solicita
+    que lo habilite en la configuración del dispositivo.
+\item[4b.] El sistema no detecta ningun código; el sistema solicita 
+    verificar el código que se deasea ingresar.
+\item[4c.] El código no corresponde a un formato EAN/UPC válido; el
+    sistema informa que el código no es reconocido.
+\item[5a.] No hay conexión a internet; el sistema muestra un mensaje de
+    error indicando que se requiere conexión.
+\item[5c.] El código no se encuentra en ninguna base de datos; el sistema
+    notifica que el producto no fue encontrado.
+\item[6a.] La información del producto está incompleta; el sistema muestra
+    solo los datos disponibles.
+\end{enumerate} \\
+\bottomrule
+\end{tabular}
+\end{table}
