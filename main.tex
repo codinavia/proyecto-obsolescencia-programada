@@ -20,6 +20,7 @@
 \usepackage{longtable}
 \usepackage{booktabs}
 \usepackage{multirow}
+\usepackage{float}
 \usepackage[style=apa, backend=biber]{biblatex}
 
 \addbibresource{references.bib} 
@@ -77,17 +78,26 @@
 \input{secciones/bosquejo_metodo}
 \newpage
 
-\input{diseño/arquitectura}
+\input{diseño/requisitos}
 \newpage
 
 \input{diseño/casos-de-uso}
 \newpage
 
-% \input{diseño/requisitos}
-% \newpage
+\input{diseño/arquitectura}
+\newpage
 
-% \input{diseño/base-de-datos}
-% \newpage
+\input{diseño/base-de-datos}
+\newpage
+
+\input{secciones/plan-recoleccion}
+\newpage
+
+\input{secciones/resultados}
+\newpage
+
+\input{secciones/conclusion}
+\newpage
 
 \setlength{\bibitemsep}{1em}
 \printbibliography[heading=bibintoc, title={Referencias}]
