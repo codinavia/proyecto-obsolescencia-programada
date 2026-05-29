@@ -1,11 +1,9 @@
-\section{Arquitectura}
+\subsection{Arquitectura}
 
 A continuación se presenta la arquitectura de TREEBAR, la aplicación
 móvil objetivo del proyecto. Se mostrará lo siguiente: tipo de arquitectura, patrones
 arquitectónicos, tecnologías  seleccionadas, así como los criterios que guiaron 
 cada decisión de diseño.
-
-\subsection{Sistema}
 
 El sistema adoptará una \textbf{arquitectura cliente-servidor} con un backend
 monolítico modular, implementando el patrón de diseño \textit{gateway
@@ -18,7 +16,7 @@ intermediario que recibe una sola petición del cliente, la descompone en
 múltiples llamadas a servicios backend, agrega los resultados y devuelve una
 única respuesta.
 
-\begin{figure}[ht]
+\begin{figure}[H]
     \centering
     \fbox{\includegraphics[width=0.8\textwidth]{imagenes/gateway-aggregation.png}}
     \caption{Gateway Aggregation}\label{fig:gateway-aggregation}
@@ -47,14 +45,16 @@ razones principales.
 Tomando en cuenta el patrón descrito anteriormente, el sistema tomará un diseño arquitectónico como
 el mostrado en la Figura~\ref{fig:diagrama-sistema}:
 
-\begin{figure}[ht]
+\begin{figure}[H]
     \centering
     \fbox{\includegraphics[width=0.8\textwidth]{imagenes/diagrama-sistema.png}}
     \caption{Diagrama del Sistema}\label{fig:diagrama-sistema}
 \end{figure}
 
 \noindent donde se contarán con los siguientes componentes:
-\begin{center}
+\begin{table}[H]
+\centering
+\caption{Detalles de tecnologías a utilizar para el desarrollo de TREEBAR.}
 \begin{tabular}{l p{5cm} p{6cm}}
 \toprule
 \textbf{Atributo} & \textbf{Detalle} & \textbf{Descripción} \\
@@ -75,4 +75,4 @@ Almacenamiento  & MySQL                 & Sistema gestor de base de datos
                                           del gateway. \\[6pt]
 \bottomrule
 \end{tabular}
-\end{center}
+\end{table}
