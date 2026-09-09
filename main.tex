@@ -30,22 +30,33 @@
 \onehalfspacing{}
 \setlength{\parskip}{1em}
 
-
 \begin{document}
 
 % ---------------- PORTADA ----------------
 \begin{titlepage}
     \centering
-    \begin{flushleft}
-        % \includegraphics[width=0.20\textwidth]{imagenes/logo_tec.png}
-    \end{flushleft}
 
+    \begin{minipage}[t]{0.48\textwidth} 
+        \begin{flushleft}
+        \includegraphics[width=4cm,keepaspectratio]{imagenes/logo_tec.png}            
+        \end{flushleft} 
+    \end{minipage}
+    \hfill 
+    \begin{minipage}[t]{0.48\textwidth}
+        \begin{flushright}
+        \includegraphics[width=3.5cm,keepaspectratio]{imagenes/logo_itc.png}            
+        \end{flushright}
+    \end{minipage}%
+    
     {\large \textbf{Tecnológico Nacional de México Campus Culiacán}}\\[1.5cm]
     {\large Obsolescencia Programada: Cómo Erradicarla a Través de la Honestidad\\
     y Veracidad de la Información en Smartphones y Laptops\\
-    Mediante los Principios de la Economía Circular}\\[1cm]
+    Mediante los Principios de la Economía Circular}\\[0.5cm]
+
+    \includegraphics[width=0.40\textwidth]{imagenes/TreeBar.png}
+
     {\large Ma. Aracely Martínez Amaya}\\[0.5cm]
-    {\large Taller de Investigación I}\\[0.5cm]
+    {\large Taller de Investigación II}\\[0.5cm]
     {\large \today}
 \end{titlepage}
 
@@ -54,6 +65,9 @@
 \newpage
 
 % ---------------- SECCIONES ----------------
+\input{secciones/introduccion}
+\newpage
+
 \input{secciones/glosario}
 \newpage
 
