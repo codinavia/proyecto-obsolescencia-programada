@@ -1,0 +1,68 @@
+\subsubsection{CU-04: Hacer Preguntas sobre un Producto}
+Este caso de uso describe el proceso mediante el cual un usuario podrá
+formular preguntas sobre un producto específico, con el objetivo de resolver
+dudas que solo se aprecian con el uso real y cotidiano del mismo antes de
+realizar una compra.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{p{3.5cm} p{10cm} p{1cm}}\toprule \textbf{Caso de Uso} &
+\textit{Hacer Preguntas sobre un Producto} & \textit{04} \\
+
+\midrule
+\textbf{Actores}       & Usuario             \\[6pt]
+\textbf{Tipo}          & Primario            \\[6pt]
+\textbf{Precondición}  & El usuario debe haber
+escaneado previamente un producto o accedido a su página de información.  \\[6pt]
+\textbf{Postcondición} & El sistema publica la pregunta en el apartado de
+preguntas del producto y notifica a los usuarios que han reseñado dicho
+producto.  \\[6pt]
+
+\midrule
+\multicolumn{3}{l}{\textbf{Propósito}} \\*[2pt]
+\multicolumn{3}{p{14.5cm}}{Permitir que el usuario resuelva dudas específicas
+sobre un producto a partir de la experiencia de otros compradores.} \\[6pt]
+
+\midrule
+\multicolumn{3}{l}{\textbf{Resumen}} \\*[2pt]
+\multicolumn{3}{p{14.5cm}}{El usuario, al consultar la información de un
+producto, puede acceder al apartado de dudas y redactar una nueva consulta
+sobre funcionalidades que no fueron mencionadas en el apartado de experiencias o
+de información técnica del producto. El usuario debera ingresar nuevamente a la 
+página del producto para verificar que su pregunta ha sido respondida.} \\[6pt]
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{p{15.5cm}}\toprule \textbf{Descripción} \\
+\midrule
+\textbf{Flujo Principal} \\[2pt]
+\begin{enumerate}
+\item El usuario selecciona el apartado \textit{Dudas}.
+\item El sistema muestra las preguntas existentes del producto junto con sus
+      respuestas.
+\item El usuario selecciona la opción \textit{Hacer una pregunta}.
+\item El sistema muestra un campo de texto para redactar la pregunta.
+\item El usuario escribe su pregunta y selecciona \textit{Publicar}.
+\item El sistema valida que la pregunta cumpla con las reglas de contenido y
+      longitud permitidas.
+\item El sistema publica la pregunta en el apartado del producto.
+\end{enumerate} \\
+\midrule
+\textbf{Flujo Alterno} \\[2pt]
+\begin{enumerate}
+\item[6a.] Si el usuario intenta publicar una pregunta vacía, el sistema
+    muestra un mensaje indicando que el campo es obligatorio.
+\item[7a.] Si la pregunta excede la longitud máxima permitida, el sistema
+    muestra un mensaje indicando el límite de caracteres.
+\item[7b.] Si la pregunta contiene contenido inapropiado u ofensivo, el
+    sistema la rechaza y muestra un mensaje explicando el motivo.
+\item[8a.] Si no hay conexión a internet, el sistema muestra un mensaje de error
+    indicando que se requiere conexión para publicar la pregunta.
+\end{enumerate}
+\\
+\bottomrule
+\end{tabular}
+\end{table}

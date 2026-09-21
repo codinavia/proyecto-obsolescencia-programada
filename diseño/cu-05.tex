@@ -1,0 +1,67 @@
+\subsubsection{CU-05: Responder Preguntas de Otros Usuarios}
+Este caso de uso describe el proceso mediante el cual un usuario que ya ha
+reseñado un producto podrá responder las preguntas formuladas por otros
+usuarios.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{p{3.5cm} p{10cm} p{1cm}}\toprule \textbf{Caso de Uso} &
+\textit{Responder Preguntas de Otros Usuarios} & \textit{05} \\
+
+\midrule
+\textbf{Actores}       & Usuario             \\[6pt]
+\textbf{Tipo}          & Primario            \\[6pt]
+\textbf{Precondición}  & El usuario debe haber
+escaneado previamente un producto o accedido a su página de información. \\[6pt]
+\textbf{Postcondición} & El sistema publica la respuesta junto a la pregunta
+correspondiente. \\[6pt]
+
+\midrule
+\multicolumn{3}{l}{\textbf{Propósito}} \\*[2pt]
+\multicolumn{3}{p{14.5cm}}{Permitir que los usuarios con experiencia real con un
+producto resuelvan las dudas de quienes desean adquirirlo.} \\[6pt]
+
+\midrule
+\multicolumn{3}{l}{\textbf{Resumen}} \\*[2pt]
+\multicolumn{3}{p{14.5cm}}{El usuario puede consultar las preguntas pendientes
+desde el apartado correspondiente del producto. Al seleccionar una pregunta,
+puede redactar una respuesta basada en su experiencia.} \\[6pt]
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{p{15.5cm}}\toprule \textbf{Descripción} \\
+\midrule
+\textbf{Flujo Principal} \\[2pt]
+\begin{enumerate}
+\item El sistema muestra la lista de preguntas pendientes de respuesta.
+\item El usuario selecciona una pregunta.
+\item El sistema muestra el detalle de la pregunta y un campo de texto para
+      redactar la respuesta.
+\item El usuario escribe su respuesta y selecciona \textit{Publicar}.
+\item El sistema valida que la respuesta cumpla con las reglas de contenido y
+      longitud permitidas.
+\item El sistema publica la respuesta junto a la pregunta correspondiente.
+\end{enumerate} \\
+\midrule
+\textbf{Flujo Alterno} \\[2pt]
+\begin{enumerate}
+\item[2a.] Si no existen preguntas pendientes, el sistema muestra un mensaje
+    informativo indicando que aún no hay preguntas por responder.
+\item[3a.] Si la pregunta fue eliminada o ya no está disponible, el sistema
+    muestra un mensaje informativo y regresa a la lista de preguntas.
+\item[5a.] Si el usuario intenta publicar una respuesta vacía, el sistema
+    muestra un mensaje indicando que el campo es obligatorio.
+\item[6a.] Si la respuesta excede la longitud máxima permitida, el sistema
+    muestra un mensaje indicando el límite de caracteres.
+\item[6b.] Si la respuesta contiene contenido inapropiado u ofensivo, el
+    sistema la rechaza y muestra un mensaje explicando el motivo.
+\item[7a.] Si no hay conexión a internet, el sistema muestra un mensaje de error
+    indicando que se requiere conexión para publicar la respuesta.
+\end{enumerate}
+\\
+\bottomrule
+\end{tabular}
+\end{table}
