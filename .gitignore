@@ -8,7 +8,7 @@
 *.fdb_latexmk
 *.synctex.gz
 *.run.xml
-*.pdf
+# *.pdf
 *.out
 *.bbl
 *.chktexrc
