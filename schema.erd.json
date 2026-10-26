@@ -44,56 +44,49 @@
       "03h380g7pbllnlnkovibil4fk",
       "03h380g7pbllnlnkovjmyq8cz",
       "03h380g7pbllnlnkovmzxrsz5"
-    ],
-    "indexIds": [],
-    "memoIds": []
+    ]
   },
   "collections": {
     "tableEntities": {
       "03h380g7o3ubxqy3e9v4bric6": {
         "id": "03h380g7o3ubxqy3e9v4bric6",
         "name": "usuario",
-        "comment": "",
         "columnIds": [
           "03h380g7o95lbt7y8i3h0npn5"
         ],
         "ui": {
           "x": 50,
-          "y": 530,
-          "color": ""
+          "y": 530
         }
       },
       "03h380g7o95lbt7y8i55rxduk": {
         "id": "03h380g7o95lbt7y8i55rxduk",
         "name": "producto",
-        "comment": "",
         "columnIds": [
           "03h380g7oerlrp3taux2o6ttu"
         ],
         "ui": {
-          "x": 50,
-          "y": 664,
-          "color": ""
+          "x": 52.5316,
+          "y": 670.329
         }
       },
       "03h380g7oerlrp3tauzbtv6p1": {
         "id": "03h380g7oerlrp3tauzbtv6p1",
         "name": "certificacion",
-        "comment": "",
         "columnIds": [
           "03h380g7oerlrp3tav0gpitwm",
-          "03h380g7oerlrp3tav255aczr"
+          "03h380g7oerlrp3tav255aczr",
+          "03h48euotbjfbq6vad2sw9hbk",
+          "03h48exgeh8pofbtgoc9qtm1x"
         ],
         "ui": {
           "x": 54,
-          "y": 170,
-          "color": ""
+          "y": 170
         }
       },
       "03h380g7oerlrp3tav44vrsxr": {
         "id": "03h380g7oerlrp3tav44vrsxr",
         "name": "criterio",
-        "comment": "",
         "columnIds": [
           "03h380g7ok3e79y2a9bocd1pi",
           "03h380g7ok3e79y2a9e2puxjw",
@@ -101,28 +94,24 @@
         ],
         "ui": {
           "x": 50,
-          "y": 348,
-          "color": ""
+          "y": 348
         }
       },
       "03h380g7ok3e79y2a9isz5maq": {
         "id": "03h380g7ok3e79y2a9isz5maq",
         "name": "reseña",
-        "comment": "",
         "columnIds": [
           "03h380g7ok3e79y2a9jwhp9q3",
           "03h380g7ok3e79y2a9mrd9aqk"
         ],
         "ui": {
           "x": 629,
-          "y": 288,
-          "color": ""
+          "y": 288
         }
       },
       "03h380g7opmm9m5aae06xyevj": {
         "id": "03h380g7opmm9m5aae06xyevj",
         "name": "criterio calificacion",
-        "comment": "",
         "columnIds": [
           "03h380g7opmm9m5aae2sww4a4",
           "03h380g7opmm9m5aae3wokxa0",
@@ -132,14 +121,12 @@
         ],
         "ui": {
           "x": 629,
-          "y": 446,
-          "color": ""
+          "y": 446
         }
       },
       "03h380g7ov5wtuzonblrphvfp": {
         "id": "03h380g7ov5wtuzonblrphvfp",
         "name": "duda",
-        "comment": "",
         "columnIds": [
           "03h380g7ov5wtuzonbn5cti39",
           "03h380g7ov5wtuzonbosgkjyx",
@@ -147,14 +134,12 @@
         ],
         "ui": {
           "x": 629,
-          "y": 676,
-          "color": ""
+          "y": 676
         }
       },
       "03h380g7ov5wtuzonbu5yl9uv": {
         "id": "03h380g7ov5wtuzonbu5yl9uv",
         "name": "respuesta",
-        "comment": "",
         "columnIds": [
           "03h380g7ov5wtuzonbw64z6gk",
           "03h380g7ov5wtuzonbxsnrr56",
@@ -162,8 +147,7 @@
         ],
         "ui": {
           "x": 1230,
-          "y": 482,
-          "color": ""
+          "y": 482
         }
       }
     },
@@ -172,180 +156,154 @@
         "id": "03h380g7o95lbt7y8i3h0npn5",
         "tableId": "03h380g7o3ubxqy3e9v4bric6",
         "name": "huella",
-        "comment": "",
         "dataType": "VARCHAR(40)",
-        "default": "",
         "options": 10
       },
       "03h380g7oerlrp3taux2o6ttu": {
         "id": "03h380g7oerlrp3taux2o6ttu",
         "tableId": "03h380g7o95lbt7y8i55rxduk",
         "name": "codigo",
-        "comment": "",
         "dataType": "VARCHAR(50)",
-        "default": "",
         "options": 10
       },
       "03h380g7oerlrp3tav0gpitwm": {
         "id": "03h380g7oerlrp3tav0gpitwm",
         "tableId": "03h380g7oerlrp3tauzbtv6p1",
         "name": "id",
-        "comment": "",
         "dataType": "VARCHAR(50)",
-        "default": "",
         "options": 10
       },
       "03h380g7oerlrp3tav255aczr": {
         "id": "03h380g7oerlrp3tav255aczr",
         "tableId": "03h380g7oerlrp3tauzbtv6p1",
         "name": "url",
-        "comment": "",
         "dataType": "VARCHAR(255)",
-        "default": "",
+        "options": 8
+      },
+      "03h48euotbjfbq6vad2sw9hbk": {
+        "id": "03h48euotbjfbq6vad2sw9hbk",
+        "tableId": "03h380g7oerlrp3tauzbtv6p1",
+        "name": "nombre",
+        "dataType": "VARCHAR(50)",
+        "options": 8
+      },
+      "03h48exgeh8pofbtgoc9qtm1x": {
+        "id": "03h48exgeh8pofbtgoc9qtm1x",
+        "tableId": "03h380g7oerlrp3tauzbtv6p1",
+        "name": "descripcion",
+        "dataType": "VARCHAR(650)",
         "options": 8
       },
       "03h380g7ok3e79y2a9bocd1pi": {
         "id": "03h380g7ok3e79y2a9bocd1pi",
         "tableId": "03h380g7oerlrp3tav44vrsxr",
         "name": "id",
-        "comment": "",
         "dataType": "VARCHAR(20)",
-        "default": "",
         "options": 10
       },
       "03h380g7ok3e79y2a9e2puxjw": {
         "id": "03h380g7ok3e79y2a9e2puxjw",
         "tableId": "03h380g7oerlrp3tav44vrsxr",
         "name": "tipo",
-        "comment": "",
         "dataType": "VARCHAR(20)",
-        "default": "",
         "options": 8
       },
       "03h380g7ok3e79y2a9gq48k1n": {
         "id": "03h380g7ok3e79y2a9gq48k1n",
         "tableId": "03h380g7oerlrp3tav44vrsxr",
         "name": "pregunta",
-        "comment": "",
         "dataType": "VARCHAR(50)",
-        "default": "",
         "options": 8
       },
       "03h380g7ok3e79y2a9jwhp9q3": {
         "id": "03h380g7ok3e79y2a9jwhp9q3",
         "tableId": "03h380g7ok3e79y2a9isz5maq",
         "name": "huella_usuario",
-        "comment": "",
         "dataType": "VARCHAR(40)",
-        "default": "",
         "options": 10
       },
       "03h380g7ok3e79y2a9mrd9aqk": {
         "id": "03h380g7ok3e79y2a9mrd9aqk",
         "tableId": "03h380g7ok3e79y2a9isz5maq",
         "name": "codigo_producto",
-        "comment": "",
         "dataType": "VARCHAR(50)",
-        "default": "",
         "options": 10
       },
       "03h380g7opmm9m5aae2sww4a4": {
         "id": "03h380g7opmm9m5aae2sww4a4",
         "tableId": "03h380g7opmm9m5aae06xyevj",
         "name": "id_criterio",
-        "comment": "",
         "dataType": "VARCHAR(20)",
-        "default": "",
         "options": 8
       },
       "03h380g7opmm9m5aae3wokxa0": {
         "id": "03h380g7opmm9m5aae3wokxa0",
         "tableId": "03h380g7opmm9m5aae06xyevj",
         "name": "huella_usuario",
-        "comment": "",
         "dataType": "VARCHAR(40)",
-        "default": "",
         "options": 8
       },
       "03h380g7opmm9m5aae6jt00qf": {
         "id": "03h380g7opmm9m5aae6jt00qf",
         "tableId": "03h380g7opmm9m5aae06xyevj",
         "name": "codigo_producto",
-        "comment": "",
         "dataType": "VARCHAR(50)",
-        "default": "",
         "options": 8
       },
       "03h380g7opmm9m5aae7ad0xrx": {
         "id": "03h380g7opmm9m5aae7ad0xrx",
         "tableId": "03h380g7opmm9m5aae06xyevj",
         "name": "comentario",
-        "comment": "",
         "dataType": "VARCHAR(250)",
-        "default": "",
         "options": 8
       },
       "03h380g7opmm9m5aae9hqjiah": {
         "id": "03h380g7opmm9m5aae9hqjiah",
         "tableId": "03h380g7opmm9m5aae06xyevj",
         "name": "calificacion",
-        "comment": "",
         "dataType": "FLOAT",
-        "default": "",
         "options": 8
       },
       "03h380g7ov5wtuzonbn5cti39": {
         "id": "03h380g7ov5wtuzonbn5cti39",
         "tableId": "03h380g7ov5wtuzonblrphvfp",
         "name": "id",
-        "comment": "",
         "dataType": "INT",
-        "default": "",
         "options": 11
       },
       "03h380g7ov5wtuzonbosgkjyx": {
         "id": "03h380g7ov5wtuzonbosgkjyx",
         "tableId": "03h380g7ov5wtuzonblrphvfp",
         "name": "codigo_producto",
-        "comment": "",
         "dataType": "VARCHAR(50)",
-        "default": "",
         "options": 8
       },
       "03h380g7ov5wtuzonbr1k9xsv": {
         "id": "03h380g7ov5wtuzonbr1k9xsv",
         "tableId": "03h380g7ov5wtuzonblrphvfp",
         "name": "pregunta",
-        "comment": "",
         "dataType": "VARCHAR(100)",
-        "default": "",
         "options": 8
       },
       "03h380g7ov5wtuzonbw64z6gk": {
         "id": "03h380g7ov5wtuzonbw64z6gk",
         "tableId": "03h380g7ov5wtuzonbu5yl9uv",
         "name": "id",
-        "comment": "",
         "dataType": "INT",
-        "default": "",
         "options": 11
       },
       "03h380g7ov5wtuzonbxsnrr56": {
         "id": "03h380g7ov5wtuzonbxsnrr56",
         "tableId": "03h380g7ov5wtuzonbu5yl9uv",
         "name": "id_duda",
-        "comment": "",
         "dataType": "INT",
-        "default": "",
         "options": 8
       },
       "03h380g7ov5wtuzonbz45sj5f": {
         "id": "03h380g7ov5wtuzonbz45sj5f",
         "tableId": "03h380g7ov5wtuzonbu5yl9uv",
         "name": "respuesta",
-        "comment": "",
         "dataType": "VARCHAR(250)",
-        "default": "",
         "options": 8
       }
     },
@@ -458,9 +416,6 @@
           ]
         }
       }
-    },
-    "indexEntities": {},
-    "indexColumnEntities": {},
-    "memoEntities": {}
+    }
   }
 }
